@@ -9,8 +9,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'source-map',
   entry: './src/app.jsx',
+  devServer: {
+    port: 8080,
+    publicPath: '/vizceral/',
+    host: '0.0.0.0',
+    contentBase: path.join(__dirname, 'dist/'),
+    historyApiFallback: true
+  },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/vizceral'),
+    publicPath: '/vizceral/',
     filename: 'vizceral.[hash].bundle.js'
   },
   resolve: {

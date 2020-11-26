@@ -6,11 +6,13 @@
   "scripts": {
     "clean": "rimraf dist && mkdirp dist",
     "lint": "eslint src --ext .js --ext .jsx --fix",
-    "copy:fonts": "cpx \"./node_modules/source-sans-pro/**/*\" ./dist/fonts",
-    "copy:json": "cpx \"./src/*.json\" ./dist",
-    "dev-server": "webpack-dev-server --host=0.0.0.0 --content-base dist/ --history-api-fallback --color",
+    "copy:fonts": "cpx \"./node_modules/source-sans-pro/**/*\" ./dist/vizceral/fonts",
+    "copy:json": "cpx \"./src/*.json\" ./dist/",
+    "dev-server": "webpack-dev-server --color",
     "dev": "npm-run-all clean --parallel copy:* dev-server",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "webpack" : "webpack",
+    "build": "npm-run-all clean --parallel copy:* webpack"
   },
   "engines": {
     "node": "~4.4.0"

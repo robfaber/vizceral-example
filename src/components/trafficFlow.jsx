@@ -25,6 +25,9 @@ import UpdateStatus from './updateStatus';
 import filterActions from './filterActions';
 import filterStore from './filterStore';
 
+// const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
+// console.log('BaseUrl:', baseUrl);
+
 const listener = new keypress.Listener();
 
 const hasOwnPropFunc = Object.prototype.hasOwnProperty;
@@ -100,11 +103,14 @@ class TrafficFlow extends React.Component {
   }
 
   viewChanged = (data) => {
+    // console.log('ViewChange->data:', data); 
+    // console.log('ViewChange->currentView:', data.view); 
+    // console.log('ViewChange->redirectedFrom:', data.redirectedFrom); 
     const changedState = {
       currentView: data.view,
       searchTerm: '',
       matches: { total: -1, visible: -1 },
-      redirectedFrom: data.redirectedFrom
+      redirectedFrom: data.redirectedFrom //Contains 'vizceral' 
     };
     if (hasOwnPropFunc.call(data, 'graph')) {
       let oldCurrentGraph = this.state.currentGraph;
@@ -137,14 +143,17 @@ class TrafficFlow extends React.Component {
 
   checkInitialRoute () {
     // Check the location bar for any direct routing information
+    // console.log('checkInitialRoute->pathName:', window.location.pathname);
     const pathArray = window.location.pathname.split('/');
+    // console.log('checkInitialRoute->pathArray:', pathArray);
     const currentView = [];
-    if (pathArray[1]) {
-      currentView.push(pathArray[1]);
-      if (pathArray[2]) {
-        currentView.push(pathArray[2]);
+    if (pathArray[2]) {
+      currentView.push(pathArray[2]);
+      if (pathArray[3]) {
+        currentView.push(pathArray[3]);
       }
     }
+    // console.log('checkInitialRoute->currentView:', currentView);
     const parsedQuery = queryString.parse(window.location.search);
 
     this.setState({ currentView: currentView, objectToHighlight: parsedQuery.highlighted });
@@ -152,7 +161,9 @@ class TrafficFlow extends React.Component {
 
   beginSampleData () {
     this.traffic = { nodes: [], connections: [] };
-    request.get('sample_data.json')
+    // request.get('sample_data.json')
+    request.get('/vizceral/api/traffic')
+    // request.get('http://localhost:8886/vizceral/api/traffic')
       .set('Accept', 'application/json')
       .end((err, res) => {
         if (res && res.status === 200) {
@@ -165,6 +176,8 @@ class TrafficFlow extends React.Component {
   componentDidMount () {
     this.checkInitialRoute();
     this.beginSampleData();
+    this.dataPolling = setInterval(() => this.beginSampleData(), 5 * 1000); // refresh 10 sec
+
 
     // Listen for changes to the stores
     filterStore.addChangeListener(this.filtersChanged);
@@ -172,6 +185,7 @@ class TrafficFlow extends React.Component {
 
   componentWillUnmount () {
     filterStore.removeChangeListener(this.filtersChanged);
+    clearInterval(this.dataPolling);
   }
 
   shouldComponentUpdate (nextProps, nextState) {
@@ -189,7 +203,7 @@ class TrafficFlow extends React.Component {
         const highlightedObjectName = nextState.highlightedObject && nextState.highlightedObject.getName();
         const state = {
           title: document.title,
-          url: `/${nextState.currentView.join('/')}${highlightedObjectName ? `?highlighted=${highlightedObjectName}` : ''}`,
+          url: `/vizceral/${nextState.currentView.join('/')}${highlightedObjectName ? `?highlighted=${highlightedObjectName}` : ''}`,
           selected: nextState.currentView,
           highlighted: highlightedObjectName
         };
