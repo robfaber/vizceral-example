@@ -28,6 +28,9 @@ module.exports = {
     extensions: ['.jsx', '.js'],
     modules: ['node_modules'],
   },
+  optimization: {
+    minimize: false,
+  },
   module: {
     rules: [
       {
