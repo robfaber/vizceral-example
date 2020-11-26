@@ -103,14 +103,14 @@ class TrafficFlow extends React.Component {
   }
 
   viewChanged = (data) => {
-    // console.log('ViewChange->data:', data); 
-    // console.log('ViewChange->currentView:', data.view); 
-    // console.log('ViewChange->redirectedFrom:', data.redirectedFrom); 
+    // console.log('ViewChange->data:', data);
+    // console.log('ViewChange->currentView:', data.view);
+    // console.log('ViewChange->redirectedFrom:', data.redirectedFrom);
     const changedState = {
       currentView: data.view,
       searchTerm: '',
       matches: { total: -1, visible: -1 },
-      redirectedFrom: data.redirectedFrom //Contains 'vizceral' 
+      redirectedFrom: data.redirectedFrom // Contains 'vizceral'
     };
     if (hasOwnPropFunc.call(data, 'graph')) {
       let oldCurrentGraph = this.state.currentGraph;
@@ -161,8 +161,9 @@ class TrafficFlow extends React.Component {
 
   beginSampleData () {
     this.traffic = { nodes: [], connections: [] };
+    request.get('real_data.json')
     // request.get('sample_data.json')
-    request.get('/vizceral/api/traffic')
+    // request.get('/vizceral/api/traffic')
     // request.get('http://localhost:8886/vizceral/api/traffic')
       .set('Accept', 'application/json')
       .end((err, res) => {

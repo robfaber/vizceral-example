@@ -1,0 +1,829 @@
+{
+  "renderer": "global",
+  "name": "edge",
+  "nodes": [
+    {
+      "renderer": "region",
+      "name": "INTERNET",
+      "updated": 1606399075691,
+      "class": "normal"
+    },
+    {
+      "renderer": "region",
+      "name": "DCR",
+      "nodes": [
+        {
+          "renderer": "focusedChild",
+          "name": "INTERNET",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "database",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "epos",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "kafka",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "elasticsearch",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "watchlist-xp-api",
+          "displayName": "watchlist-xp-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "order-api",
+          "displayName": "order-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "ex-ante-cost-tool-api",
+          "displayName": "ex-ante-cost-tool-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "epos-addon-service",
+          "displayName": "epos-addon-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "exams-epos-api",
+          "displayName": "exams-epos-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "europort-messaging",
+          "displayName": "europort-messaging",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "watchlist-api",
+          "displayName": "watchlist-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "revision-signal-generator",
+          "displayName": "revision-signal-generator",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "parties-europort-bridge-service",
+          "displayName": "parties-europort-bridge-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "tridion-bridge-service",
+          "displayName": "tridion-bridge-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "exams-xp-api",
+          "displayName": "exams-xp-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "internal-gateway",
+          "displayName": "internal-gateway",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "financial-forecast-service",
+          "displayName": "financial-forecast-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "dochub-xp-api",
+          "displayName": "dochub-xp-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "public-xp-service",
+          "displayName": "public-xp-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "transaction-authorization-service",
+          "displayName": "transaction-authorization-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "securities-notification",
+          "displayName": "securities-notification",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "news-api",
+          "displayName": "news-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "documentum-gateway-service",
+          "displayName": "documentum-gateway-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "market-fetcher-service",
+          "displayName": "market-fetcher-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "thirdparty-xp-service",
+          "displayName": "thirdparty-xp-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "api-gateway",
+          "displayName": "api-gateway",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "admin-server",
+          "displayName": "admin-server",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "financial-forecast-xp-service",
+          "displayName": "financial-forecast-xp-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "onboarding-service",
+          "displayName": "onboarding-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "news-fetcher",
+          "displayName": "news-fetcher",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "fund-info-fetcher",
+          "displayName": "fund-info-fetcher",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "advice-xp-service",
+          "displayName": "advice-xp-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "mobile-experience-service",
+          "displayName": "mobile-experience-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "portfolio-api",
+          "displayName": "portfolio-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "basket-orders-service",
+          "displayName": "basket-orders-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "web-xp-service",
+          "displayName": "web-xp-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "parties-service",
+          "displayName": "parties-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "instruments-synchronization-service",
+          "displayName": "instruments-synchronization-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "onboarding-xp-service",
+          "displayName": "onboarding-xp-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "mobile-support-api",
+          "displayName": "mobile-support-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "europort-dcs-bridge-service",
+          "displayName": "europort-dcs-bridge-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "investments-test-service",
+          "displayName": "investments-test-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "vizceral-server",
+          "displayName": "vizceral-server",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "permissions-service",
+          "displayName": "permissions-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "performance-prefetcher",
+          "displayName": "performance-prefetcher",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "customer-alert",
+          "displayName": "customer-alert",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "investment-office-fetcher",
+          "displayName": "investment-office-fetcher",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "alert-matching",
+          "displayName": "alert-matching",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "config-server",
+          "displayName": "config-server",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "money-transfer-service",
+          "displayName": "money-transfer-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "europort-giom-bridge-service",
+          "displayName": "europort-giom-bridge-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "order-xp-api",
+          "displayName": "order-xp-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "instrument-composition-fetcher",
+          "displayName": "instrument-composition-fetcher",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "markets-api",
+          "displayName": "markets-api",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "reporting-service",
+          "displayName": "reporting-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "product-migration-service",
+          "displayName": "product-migration-service",
+          "updated": 1606399075691,
+          "class": "normal"
+        }
+      ],
+      "connections": [
+        {
+          "source": "web-xp-service",
+          "target": "phoenix-discovery-service",
+          "metrics": {
+            "normal": 2.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "web-customer-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "web-customer",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "consentorchestrationapi",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "portfolio-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "basket-orders-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "customer-alert",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "order-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "permissions-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "exams-epos-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "parties-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "money-transfer-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "watchlist-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "tridion-bridge-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "sessions-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "markets-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "product-migration-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "web-xp-service",
+          "target": "onboarding-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "INTERNET",
+          "target": "internal-gateway",
+          "metrics": {
+            "normal": 157.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "money-transfer-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "markets-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "admin-server",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "portfolio-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "basket-orders-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "order-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "epos-addon-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "internal-gateway",
+          "target": "parties-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "exams-epos-api",
+          "target": "epos",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "thirdparty-xp-service",
+          "target": "parties-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "thirdparty-xp-service",
+          "target": "epos-addon-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "thirdparty-xp-service",
+          "target": "portfolio-api",
+          "metrics": {
+            "normal": 1.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "public-xp-service",
+          "target": "ex-ante-cost-tool-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "order-api",
+          "target": "epos",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "order-api",
+          "target": "epos-addon-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "INTERNET",
+          "target": "api-gateway",
+          "metrics": {
+            "normal": 233.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "public-xp-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "onboarding-xp-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "order-xp-api",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "thirdparty-xp-service",
+          "metrics": {
+            "normal": 1.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "mobile-experience-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "financial-forecast-xp-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "web-xp-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        },
+        {
+          "source": "api-gateway",
+          "target": "advice-xp-service",
+          "metrics": {
+            "normal": 0.0,
+            "danger": 0.0
+          }
+        }
+      ],
+      "updated": 1606399075853,
+      "class": "normal"
+    },
+    {
+      "renderer": "region",
+      "name": "NotSet",
+      "nodes": [
+        {
+          "renderer": "focusedChild",
+          "name": "INTERNET",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "database",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "epos",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "kafka",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "elasticsearch",
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "web-customer",
+          "displayName": "web-customer",
+          "updated": 1606399075853,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "web-advisor",
+          "displayName": "web-advisor",
+          "updated": 1606399075853,
+          "class": "normal"
+        },
+        {
+          "renderer": "focusedChild",
+          "name": "web-public",
+          "displayName": "web-public",
+          "updated": 1606399075853,
+          "class": "normal"
+        }
+      ],
+      "connections": [],
+      "updated": 1606399075855,
+      "class": "normal"
+    }
+  ],
+  "connections": [
+    {
+      "source": "INTERNET",
+      "target": "DCR",
+      "metrics": {
+        "normal": 390.0,
+        "danger": 0.0
+      }
+    },
+    {
+      "source": "INTERNET",
+      "target": "NotSet",
+      "metrics": {
+        "normal": 0.0,
+        "danger": 0.0
+      }
+    }
+  ],
+  "serverUpdateTime": 1606399075855
+}
